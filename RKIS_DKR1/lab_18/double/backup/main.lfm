@@ -1,0 +1,90 @@
+object fMain: TfMain
+  Left = 1227
+  Height = 265
+  Top = 195
+  Width = 378
+  Caption = 'Примеры работы с подпрограммами'
+  ClientHeight = 265
+  ClientWidth = 378
+  Color = clInfoBk
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 40
+    Height = 15
+    Top = 48
+    Width = 133
+    Caption = 'Введите любое число:'
+    Color = 13208803
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 176
+    Height = 23
+    Top = 48
+    Width = 138
+    Color = 15386344
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 176
+    Height = 27
+    Top = 85
+    Width = 138
+    Caption = 'Пример удвоения №1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 176
+    Height = 24
+    Top = 120
+    Width = 138
+    Caption = 'Пример удвоения №2'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 176
+    Height = 24
+    Top = 152
+    Width = 138
+    Caption = 'Пример удвоения №3'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 176
+    Height = 24
+    Top = 184
+    Width = 138
+    Caption = 'Пример удвоения №4'
+    TabOrder = 4
+    OnClick = Button3Click
+  end
+  object Button5: TButton
+    Left = 176
+    Height = 24
+    Top = 216
+    Width = 138
+    Caption = 'Пример удвоения №5'
+    TabOrder = 5
+    OnClick = Button3Click
+  end
+  object BitBtn1: TBitBtn
+    Left = 39
+    Height = 24
+    Top = 216
+    Width = 81
+    Caption = 'Закрыть'
+    Kind = bkClose
+    ModalResult = 11
+    OnClick = BitBtn1Click
+    TabOrder = 6
+  end
+end

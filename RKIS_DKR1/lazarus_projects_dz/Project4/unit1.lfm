@@ -1,0 +1,125 @@
+object Form1: TForm1
+  Left = 719
+  Height = 546
+  Top = 341
+  Width = 694
+  Caption = 'y=x^2'
+  ClientHeight = 546
+  ClientWidth = 694
+  Color = 15963214
+  DesignTimePPI = 144
+  LCLVersion = '3.0.0.3'
+  object Memo1: TMemo
+    Left = 16
+    Height = 272
+    Top = 16
+    Width = 640
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 424
+    Height = 42
+    Top = 488
+    Width = 136
+    Caption = '&Выход'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Kind = bkClose
+    ModalResult = 11
+    OnClick = BitBtn1Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 35
+    Top = 323
+    Width = 252
+    Caption = 'Введите левую границу'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 35
+    Top = 368
+    Width = 268
+    Caption = 'Введите правую границу'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 35
+    Top = 416
+    Width = 139
+    Caption = 'Введите шаг'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 312
+    Height = 33
+    Top = 323
+    Width = 177
+    TabOrder = 2
+    OnChange = Edit1Change
+  end
+  object Edit2: TEdit
+    Left = 312
+    Height = 33
+    Top = 368
+    Width = 177
+    TabOrder = 3
+    OnChange = Edit2Change
+  end
+  object Edit3: TEdit
+    Left = 312
+    Height = 33
+    Top = 416
+    Width = 177
+    TabOrder = 4
+    OnChange = Edit3Change
+  end
+  object Button1: TButton
+    Left = 517
+    Height = 72
+    Top = 344
+    Width = 139
+    BorderSpacing.Around = 3
+    Caption = 'Рассчитать'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = Button1Click
+  end
+end

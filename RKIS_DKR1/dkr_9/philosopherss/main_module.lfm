@@ -1,0 +1,94 @@
+object mForm: TmForm
+  Left = 238
+  Height = 407
+  Top = 385
+  Width = 1100
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Философы'
+  ClientHeight = 407
+  ClientWidth = 1100
+  DesignTimePPI = 144
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.0.0.3'
+  object Panel: TPanel
+    Left = 0
+    Height = 76
+    Top = 330
+    Width = 1100
+    Align = alTop
+    ClientHeight = 76
+    ClientWidth = 1100
+    Color = clTeal
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    OnClick = PanelClick
+    object Add_Note: TBitBtn
+      Left = 176
+      Height = 46
+      Top = 16
+      Width = 240
+      Caption = 'Добавить запись'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = Add_NoteClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Edit_Note: TBitBtn
+      Left = 444
+      Height = 46
+      Top = 16
+      Width = 238
+      Caption = 'Редактировать запись'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = Edit_NoteClick
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Del_Note: TBitBtn
+      Left = 704
+      Height = 46
+      Top = 16
+      Width = 211
+      Caption = 'Удалить запись'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = Del_NoteClick
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object mRec: TStringGrid
+    Left = 0
+    Height = 330
+    Top = 0
+    Width = 1100
+    Align = alTop
+    AlternateColor = clAqua
+    Color = clWhite
+    ColumnClickSorts = True
+    FixedCols = 0
+    RowCount = 1
+    ScrollBars = ssAutoVertical
+    TabOrder = 1
+    OnDblClick = Edit_NoteClick
+    ColWidths = (
+      306
+      136
+      126
+      296
+      238
+    )
+  end
+end

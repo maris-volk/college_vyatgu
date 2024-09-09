@@ -1,0 +1,106 @@
+object Form1: TForm1
+  Left = 37
+  Height = 546
+  Top = 584
+  Width = 720
+  Caption = 'Диагональ и площадь вписанного прямоугольника '
+  ClientHeight = 546
+  ClientWidth = 720
+  Color = 15963214
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  LCLVersion = '3.0.0.3'
+  object Memo1: TMemo
+    Left = 16
+    Height = 256
+    Top = 16
+    Width = 680
+    ReadOnly = True
+    TabOrder = 0
+    OnChange = Memo1Change
+  end
+  object BitBtn1: TBitBtn
+    Left = 480
+    Height = 42
+    Top = 480
+    Width = 136
+    Caption = '&Выход'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Kind = bkClose
+    ModalResult = 11
+    OnClick = BitBtn1Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 56
+    Top = 392
+    Width = 305
+    Caption = 'Введите отношение сторон'#13#10'вписанного прямоугольника'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -24
+    Font.Name = 'FuturaDemiC'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object Edit2: TEdit
+    Left = 352
+    Height = 33
+    Top = 408
+    Width = 177
+    TabOrder = 2
+    OnChange = Edit2Change
+  end
+  object Edit3: TEdit
+    Left = 352
+    Height = 33
+    Top = 322
+    Width = 177
+    TabOrder = 3
+    OnChange = Edit3Change
+  end
+  object Button1: TButton
+    Left = 557
+    Height = 72
+    Top = 352
+    Width = 139
+    BorderSpacing.Around = 3
+    Caption = 'Рассчитать'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'FuturaDemiC'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = Button1Click
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 28
+    Top = 320
+    Width = 303
+    Alignment = taCenter
+    Caption = 'Введите радиус окружности'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -24
+    Font.Name = 'FuturaDemiC'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = Label3Click
+  end
+end

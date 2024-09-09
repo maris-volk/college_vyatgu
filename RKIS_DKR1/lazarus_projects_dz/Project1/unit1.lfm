@@ -1,0 +1,75 @@
+object Form1: TForm1
+  Left = 570
+  Height = 472
+  Top = 261
+  Width = 614
+  Caption = 'Form1'
+  ClientHeight = 472
+  ClientWidth = 614
+  Color = 15330391
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  LCLVersion = '3.0.0.3'
+  object Button1: TButton
+    Cursor = crHandPoint
+    Left = 128
+    Height = 56
+    Top = 200
+    Width = 352
+    Caption = 'Щёлкните здесь!'
+    Color = clTeal
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clAqua
+    Font.Height = -20
+    Font.Name = 'Showcard Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Left = 112
+    Height = 24
+    Top = 120
+    Width = 392
+    Caption = 'Догадайтесь, кто сделал проект?'
+    Color = clFuchsia
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clFuchsia
+    Font.Height = -20
+    Font.Name = 'Small Fonts'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 160
+    Height = 1
+    Top = 281
+    Width = 1
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object BitBtn1: TBitBtn
+    Left = 416
+    Height = 41
+    Top = 368
+    Width = 132
+    Caption = 'Выход'
+    Kind = bkAbort
+    ModalResult = 3
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+end

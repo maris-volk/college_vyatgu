@@ -1,0 +1,399 @@
+object Calculator: TCalculator
+  Left = 178
+  Height = 574
+  Top = 254
+  Width = 515
+  BorderStyle = bsSingle
+  Caption = 'Калькулятор'
+  ClientHeight = 574
+  ClientWidth = 515
+  Color = 16777141
+  DesignTimePPI = 144
+  LCLVersion = '3.0.0.3'
+  Scaled = False
+  object EnterField: TEdit
+    Left = 33
+    Height = 52
+    Top = 56
+    Width = 451
+    Alignment = taRightJustify
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -36
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object Num1: TButton
+    Left = 33
+    Height = 65
+    Top = 384
+    Width = 71
+    Caption = '1'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+    OnClick = ClickNums
+  end
+  object Num2: TButton
+    Left = 129
+    Height = 65
+    Top = 384
+    Width = 70
+    Caption = '2'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+    OnClick = ClickNums
+  end
+  object Num3: TButton
+    Left = 225
+    Height = 65
+    Top = 384
+    Width = 70
+    Caption = '3'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+    OnClick = ClickNums
+  end
+  object Num4: TButton
+    Left = 32
+    Height = 62
+    Top = 304
+    Width = 72
+    Caption = '4'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+    OnClick = ClickNums
+  end
+  object Num5: TButton
+    Left = 129
+    Height = 64
+    Top = 304
+    Width = 70
+    Caption = '5'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+    OnClick = ClickNums
+  end
+  object Num6: TButton
+    Left = 225
+    Height = 65
+    Top = 304
+    Width = 70
+    Caption = '6'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+    OnClick = ClickNums
+  end
+  object Num7: TButton
+    Left = 33
+    Height = 68
+    Top = 216
+    Width = 71
+    Caption = '7'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+    OnClick = ClickNums
+  end
+  object Num8: TButton
+    Left = 129
+    Height = 64
+    Top = 216
+    Width = 68
+    Caption = '8'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+    OnClick = ClickNums
+  end
+  object Num0: TButton
+    Left = 33
+    Height = 65
+    Top = 464
+    Width = 164
+    Caption = '0'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+    OnClick = ClickNums
+  end
+  object point: TButton
+    Left = 225
+    Height = 65
+    Top = 464
+    Width = 70
+    Caption = ','
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 10
+    OnClick = ClickNums
+  end
+  object plus: TButton
+    Left = 321
+    Height = 65
+    Top = 464
+    Width = 70
+    Caption = '+'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 11
+    OnClick = ClickOperations
+  end
+  object minus: TButton
+    Left = 321
+    Height = 65
+    Top = 384
+    Width = 70
+    Caption = '-'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 12
+    OnClick = ClickOperations
+  end
+  object multi: TButton
+    Left = 321
+    Height = 65
+    Top = 304
+    Width = 70
+    Caption = '*'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 13
+    OnClick = ClickOperations
+  end
+  object division: TButton
+    Left = 321
+    Height = 65
+    Top = 216
+    Width = 70
+    Caption = '/'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 14
+    OnClick = ClickOperations
+  end
+  object Equal_S: TButton
+    Left = 419
+    Height = 145
+    Top = 384
+    Width = 68
+    Caption = '='
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 15
+    OnClick = Equal_SClick
+  end
+  object square: TButton
+    Left = 417
+    Height = 65
+    Top = 216
+    Width = 70
+    Caption = 'x^2'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 16
+    OnClick = squareClick
+  end
+  object inverse: TButton
+    Left = 417
+    Height = 65
+    Top = 304
+    Width = 70
+    Caption = '1/x'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 17
+    OnClick = inverseClick
+  end
+  object CleanEntry: TButton
+    Left = 225
+    Height = 65
+    Top = 128
+    Width = 70
+    Caption = 'CE'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 18
+    OnClick = CleanEntryClick
+  end
+  object Clear: TButton
+    Left = 321
+    Height = 65
+    Top = 128
+    Width = 70
+    Caption = 'C'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 19
+    OnClick = ClearClick
+  end
+  object DelLast: TButton
+    Left = 33
+    Height = 65
+    Top = 128
+    Width = 166
+    Caption = '<-'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 20
+    OnClick = DelLastClick
+  end
+  object ShowCurrentCalc: TLabel
+    Left = 24
+    Height = 25
+    Top = 16
+    Width = 444
+    Alignment = taRightJustify
+    AutoSize = False
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clWhite
+    Font.Height = -22
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    ParentFont = False
+  end
+  object Num9: TButton
+    Left = 225
+    Height = 64
+    Top = 216
+    Width = 70
+    Caption = '9'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -28
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 21
+    OnClick = ClickNums
+  end
+  object sqroot: TButton
+    Left = 417
+    Height = 65
+    Top = 128
+    Width = 70
+    Caption = 'X^(1/2)'
+    Color = clCream
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Trebuchet MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 22
+    OnClick = sqrootClick
+  end
+end
